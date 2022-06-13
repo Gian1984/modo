@@ -140,7 +140,7 @@ import { SearchIcon, ChevronLeftIcon, ChevronRightIcon } from '@heroicons/vue/so
 
 export default {
 
-  data(){
+  data:() =>{
     return {
       perPage: 10,
       pages:'',
