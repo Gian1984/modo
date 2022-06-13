@@ -167,6 +167,7 @@ export default {
     findProduct(){
       this.loading = true
       let find = this.search
+      console.log(find)
       this.axios.get('https://dummyjson.com/products/search?q='+find)
           .then(response => {
             this.products = response.data.products
