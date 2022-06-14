@@ -4,6 +4,7 @@ import { SearchIcon, ChevronLeftIcon, ChevronRightIcon } from '@heroicons/vue/so
 </script>
 
 <template>
+
   <div class="px-10 bg-grigio" style="height: 100vh">
     <div class="py-4">
       <div class="max-w-3xl mx-auto grid grid-cols-1 gap-6 sm:px-6 lg:max-w-full lg:grid-flow-col-dense lg:grid-cols-6">
@@ -22,7 +23,6 @@ import { SearchIcon, ChevronLeftIcon, ChevronRightIcon } from '@heroicons/vue/so
         </div>
       </div>
     </div>
-
 
     <div class="py-10 bg-grigio">
       <div class="mt-8 max-w-3xl mx-auto grid grid-cols-1 gap-6 sm:px-6 lg:max-w-full lg:grid-flow-col-dense lg:grid-cols-4">
@@ -82,8 +82,6 @@ import { SearchIcon, ChevronLeftIcon, ChevronRightIcon } from '@heroicons/vue/so
           </div>
           <!-- product list-->
 
-
-
           <!--  spinner to indicate that a request is in progress -->
           <div v-if="loading" class="bg-white min-h-full px-4 py-16 sm:px-6 sm:py-24 md:grid md:place-items-center lg:px-8">
             <div class="max-w-max mx-auto">
@@ -104,7 +102,6 @@ import { SearchIcon, ChevronLeftIcon, ChevronRightIcon } from '@heroicons/vue/so
           </div>
           <!--  spinner to indicate that a request is in progress -->
         </div>
-
 
         <!--newsletter section-->
         <section aria-labelledby="timeline-title" class="lg:col-start-4 lg:col-span-1">
@@ -148,10 +145,10 @@ export default {
       products:'',
       search:'',
       loading: false,
-      filter_products: ''
+      filter_products: '',
+      empty:''
     }
   },
-
 
   // mounted(){
   //   this.axios.get('https://dummyjson.com/products')
@@ -195,7 +192,6 @@ export default {
       return (this.currPage - 1) * this.pages;
     }
   }
-
 
 }
 </script>
