@@ -5,7 +5,7 @@ import { SearchIcon, ChevronLeftIcon, ChevronRightIcon } from '@heroicons/vue/so
 
 <template>
 <section class="bg-grigio px-5">
-  <div style="height: 100vh">
+  <div style="min-height: 100vh">
     <div class="py-4">
       <div class="max-w-3xl mx-auto grid grid-cols-1 gap-6 sm:px-6 lg:max-w-full lg:grid-flow-col-dense lg:grid-cols-6">
         <div class="space-y-6 lg:col-start-1 lg:col-span-4">
