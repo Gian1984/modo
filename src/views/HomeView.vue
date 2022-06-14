@@ -4,8 +4,8 @@ import { SearchIcon, ChevronLeftIcon, ChevronRightIcon } from '@heroicons/vue/so
 </script>
 
 <template>
-
-  <div class="px-10 bg-grigio" style="height: 100vh">
+<section class="bg-grigio">
+  <div class="px-10" style="height: 100vh">
     <div class="py-4">
       <div class="max-w-3xl mx-auto grid grid-cols-1 gap-6 sm:px-6 lg:max-w-full lg:grid-flow-col-dense lg:grid-cols-6">
         <div class="space-y-6 lg:col-start-1 lg:col-span-4">
@@ -24,7 +24,7 @@ import { SearchIcon, ChevronLeftIcon, ChevronRightIcon } from '@heroicons/vue/so
       </div>
     </div>
 
-    <div class="py-10 bg-grigio">
+    <div class="py-10">
       <div class="mt-8 max-w-3xl mx-auto grid grid-cols-1 gap-6 sm:px-6 lg:max-w-full lg:grid-flow-col-dense lg:grid-cols-4">
         <div class="space-y-6 lg:col-start-1 lg:col-span-3">
           <!-- product list-->
@@ -131,6 +131,8 @@ import { SearchIcon, ChevronLeftIcon, ChevronRightIcon } from '@heroicons/vue/so
       </div>
     </div>
   </div>
+</section>
+
 </template>
 
 <script>
